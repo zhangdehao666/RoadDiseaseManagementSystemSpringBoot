@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cumtb.rdmsspring.mapper.CxwzxxMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cumtb.rdmsspring.entity.Cxwzxx">
+        <id column="CXWZXXID" property="cxwzxxid" />
+        <result column="XTCXBH" property="xtcxbh" />
+        <result column="XCHCXMC" property="xchcxmc" />
+        <result column="QDWZHMS" property="qdwzhms" />
+        <result column="ZHDWZHMS" property="zhdwzhms" />
+        <result column="QDWZHLCH" property="qdwzhlch" />
+        <result column="ZHDWZHLCH" property="zhdwzhlch" />
+        <result column="QDWZHGPSZB" property="qdwzhgpszb" />
+        <result column="ZHDWZHGPSZB" property="zhdwzhgpszb" />
+        <result column="CXSHX" property="cxshx" />
+        <result column="CXLYJFX" property="cxlyjfx" />
+        <result column="GDDSH" property="gddsh" />
+        <result column="GDGPSZB" property="gdgpszb" />
+        <result column="CHDXX" property="chdxx" />
+        <result column="XMLXXXID" property="xmlxxxid" />
+        <result column="QDDTZB" property="qddtzb" />
+        <result column="ZHDDTZB" property="zhddtzb" />
+        <result column="CXTCQK" property="cxtcqk" />
+        <result column="gpswjm" property="gpswjm" />
+        <result column="gpswjlj" property="gpswjlj" />
+        <result column="JTYL" property="jtyl" />
+        <result column="TCQYID" property="tcqyid" />
+        <result column="cxjlshj" property="cxjlshj" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CXWZXXID, XTCXBH, XCHCXMC, QDWZHMS, ZHDWZHMS, QDWZHLCH, ZHDWZHLCH, QDWZHGPSZB, ZHDWZHGPSZB, CXSHX, CXLYJFX, GDDSH, GDGPSZB, CHDXX, XMLXXXID, QDDTZB, ZHDDTZB, CXTCQK, gpswjm, gpswjlj, JTYL, TCQYID, cxjlshj
+    </sql>
+
+</mapper>

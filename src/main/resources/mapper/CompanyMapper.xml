@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cumtb.rdmsspring.mapper.CompanyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cumtb.rdmsspring.entity.Company">
+        <id column="companyid" property="companyid" />
+        <result column="name" property="name" />
+        <result column="code" property="code" />
+        <result column="xuke" property="xuke" />
+        <result column="myphone" property="myphone" />
+        <result column="chuanzhen" property="chuanzhen" />
+        <result column="email" property="email" />
+        <result column="boss" property="boss" />
+        <result column="address" property="address" />
+        <result column="youbian" property="youbian" />
+        <result column="introduce" property="introduce" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        companyid, name, code, xuke, myphone, chuanzhen, email, boss, address, youbian, introduce
+    </sql>
+
+</mapper>

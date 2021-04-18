@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cumtb.rdmsspring.mapper.CxwztcfwxxMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cumtb.rdmsspring.entity.Cxwztcfwxx">
+        <id column="CXWZTCFWXXID" property="cxwztcfwxxid" />
+        <result column="XTFWBH" property="xtfwbh" />
+        <result column="TCCSH" property="tccsh" />
+        <result column="TCQSHRQSHJ" property="tcqshrqshj" />
+        <result column="TCJSHRQSHJ" property="tcjshrqshj" />
+        <result column="XMLXXXID" property="xmlxxxid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CXWZTCFWXXID, XTFWBH, TCCSH, TCQSHRQSHJ, TCJSHRQSHJ, XMLXXXID
+    </sql>
+
+</mapper>

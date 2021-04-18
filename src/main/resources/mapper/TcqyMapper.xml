@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cumtb.rdmsspring.mapper.TcqyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cumtb.rdmsspring.entity.Tcqy">
+        <id column="TCQYID" property="tcqyid" />
+        <result column="SHI" property="shi" />
+        <result column="SHSH" property="shsh" />
+        <result column="XXZ" property="xxz" />
+        <result column="JD" property="jd" />
+        <result column="TCQY" property="tcqy" />
+        <result column="XMLXXXID" property="xmlxxxid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        TCQYID, SHI, SHSH, XXZ, JD, TCQY, XMLXXXID
+    </sql>
+
+</mapper>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cumtb.rdmsspring.mapper.DltcbhxxMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cumtb.rdmsspring.entity.Dltcbhxx">
+        <id column="DLTCBHXXID" property="dltcbhxxid" />
+        <result column="BHLY" property="bhly" />
+        <result column="BHLX" property="bhlx" />
+        <result column="BHDJ" property="bhdj" />
+        <result column="BHCXCHC" property="bhcxchc" />
+        <result column="BHDTZB" property="bhdtzb" />
+        <result column="BHZHXWZH" property="bhzhxwzh" />
+        <result column="BHPJJSHD" property="bhpjjshd" />
+        <result column="BHPJKXL" property="bhpjkxl" />
+        <result column="BHPJHSHL" property="bhpjhshl" />
+        <result column="BHTZCSH1" property="bhtzcsh1" />
+        <result column="BHTZCSH2" property="bhtzcsh2" />
+        <result column="BHTZCSH3" property="bhtzcsh3" />
+        <result column="BHTZCSH4" property="bhtzcsh4" />
+        <result column="LDBHTPWJM" property="ldbhtpwjm" />
+        <result column="XCHBHZHPWJM" property="xchbhzhpwjm" />
+        <result column="BHZHPLJ" property="bhzhplj" />
+        <result column="BHTPLJ" property="bhtplj" />
+        <result column="BHYZMSH" property="bhyzmsh" />
+        <result column="CXWZXXID" property="cxwzxxid" />
+        <result column="BZBHXXID" property="bzbhxxid" />
+        <result column="bhxhfaxxid" property="bhxhfaxxid" />
+        <result column="cxtcldsjccxxid" property="cxtcldsjccxxid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        DLTCBHXXID, BHLY, BHLX, BHDJ, BHCXCHC, BHDTZB, BHZHXWZH, BHPJJSHD, BHPJKXL, BHPJHSHL, BHTZCSH1, BHTZCSH2, BHTZCSH3, BHTZCSH4, LDBHTPWJM, XCHBHZHPWJM, BHZHPLJ, BHTPLJ, BHYZMSH, CXWZXXID, BZBHXXID, bhxhfaxxid, cxtcldsjccxxid
+    </sql>
+
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cumtb.rdmsspring.mapper.HandleresultMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cumtb.rdmsspring.entity.Handleresult">
+        <id column="HANDLERESULTID" property="handleresultid" />
+        <result column="CXTCLDSJCCXXID" property="cxtcldsjccxxid" />
+        <result column="RYBH" property="rybh" />
+        <result column="PROORDER" property="proorder" />
+        <result column="ISEND" property="isend" />
+        <result column="PROCESSNAME" property="processname" />
+        <result column="RESULTFILENAME" property="resultfilename" />
+        <result column="RESULTFILEPATH" property="resultfilepath" />
+        <result column="PROCESSDATE" property="processdate" />
+        <result column="PROCESSFILE" property="processfile" />
+        <result column="TOTALNUM" property="totalnum" />
+        <result column="ISORIGIN" property="isorigin" />
+        <result column="HANDLESJCCID" property="handlesjccid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        HANDLERESULTID, CXTCLDSJCCXXID, RYBH, PROORDER, ISEND, PROCESSNAME, RESULTFILENAME, RESULTFILEPATH, PROCESSDATE, PROCESSFILE, TOTALNUM, ISORIGIN, HANDLESJCCID
+    </sql>
+
+</mapper>

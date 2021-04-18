@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cumtb.rdmsspring.mapper.DxgxtcxxMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cumtb.rdmsspring.entity.Dxgxtcxx">
+        <id column="DXGXTCXXID" property="dxgxtcxxid" />
+        <result column="GXBH" property="gxbh" />
+        <result column="GXXCHBH" property="gxxchbh" />
+        <result column="GXMSH" property="gxmsh" />
+        <result column="GXLX" property="gxlx" />
+        <result column="GXCHC" property="gxchc" />
+        <result column="GXZHXWZH" property="gxzhxwzh" />
+        <result column="GXTPWJ" property="gxtpwj" />
+        <result column="GXTPWJLJ" property="gxtpwjlj" />
+        <result column="GXZHPWJ" property="gxzhpwj" />
+        <result column="GXZHPWJLJ" property="gxzhpwjlj" />
+        <result column="GXSHYTWJ" property="gxshytwj" />
+        <result column="GXSHYTLJ" property="gxshytlj" />
+        <result column="DXQDDTZB" property="dxqddtzb" />
+        <result column="GXQDZB" property="gxqdzb" />
+        <result column="GXZHDDTZB" property="gxzhddtzb" />
+        <result column="GXZHDZB" property="gxzhdzb" />
+        <result column="GXQDMSH" property="gxqdmsh" />
+        <result column="GXZHDMSH" property="gxzhdmsh" />
+        <result column="GXQDLCH" property="gxqdlch" />
+        <result column="GXZHDLCH" property="gxzhdlch" />
+        <result column="GDDTZB" property="gddtzb" />
+        <result column="GDZB" property="gdzb" />
+        <result column="GJ" property="gj" />
+        <result column="CAIZHI" property="caizhi" />
+        <result column="QSHDGDBG" property="qshdgdbg" />
+        <result column="QSHDGDMS" property="qshdgdms" />
+        <result column="ZZHDGDBG" property="zzhdgdbg" />
+        <result column="ZZHDGDMS" property="zzhdgdms" />
+        <result column="PG" property="pg" />
+        <result column="QSHDW" property="qshdw" />
+        <result column="MSHRQ" property="mshrq" />
+        <result column="MSHFSH" property="mshfsh" />
+        <result column="ISGXD" property="isgxd" />
+        <result column="XZB" property="xzb" />
+        <result column="YZB" property="yzb" />
+        <result column="GXDGJLX" property="gxdgjlx" />
+        <result column="CXWZXXID" property="cxwzxxid" />
+        <result column="DXGXBZKID" property="dxgxbzkid" />
+        <result column="GXQDDTZB" property="gxqddtzb" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        DXGXTCXXID, GXBH, GXXCHBH, GXMSH, GXLX, GXCHC, GXZHXWZH, GXTPWJ, GXTPWJLJ, GXZHPWJ, GXZHPWJLJ, GXSHYTWJ, GXSHYTLJ, DXQDDTZB, GXQDZB, GXZHDDTZB, GXZHDZB, GXQDMSH, GXZHDMSH, GXQDLCH, GXZHDLCH, GDDTZB, GDZB, GJ, CAIZHI, QSHDGDBG, QSHDGDMS, ZZHDGDBG, ZZHDGDMS, PG, QSHDW, MSHRQ, MSHFSH, ISGXD, XZB, YZB, GXDGJLX, CXWZXXID, DXGXBZKID, GXQDDTZB
+    </sql>
+
+</mapper>

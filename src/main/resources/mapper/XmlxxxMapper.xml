@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cumtb.rdmsspring.mapper.XmlxxxMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cumtb.rdmsspring.entity.Xmlxxx">
+        <id column="XMLXXXID" property="xmlxxxid" />
+        <result column="XMBH" property="xmbh" />
+        <result column="XMMC" property="xmmc" />
+        <result column="TCDWDM" property="tcdwdm" />
+        <result column="TCDW" property="tcdw" />
+        <result column="WTDW" property="wtdw" />
+        <result column="FZR" property="fzr" />
+        <result column="CYRY" property="cyry" />
+        <result column="JLRY" property="jlry" />
+        <result column="XMSHQLJ" property="xmshqlj" />
+        <result column="XMSHQ" property="xmshq" />
+        <result column="XMPF" property="xmpf" />
+        <result column="XMHT" property="xmht" />
+        <result column="XMTJ" property="xmtj" />
+        <result column="XMJGSH" property="xmjgsh" />
+        <result column="ORGID" property="orgid" />
+        <result column="companyid" property="companyid" />
+        <result column="XMPFLJ" property="xmpflj" />
+        <result column="XMHTLJ" property="xmhtlj" />
+        <result column="ENDTIME" property="endtime" />
+        <result column="STARTTIME" property="starttime" />
+        <result column="XMTJLJ" property="xmtjlj" />
+        <result column="XMWJLJ" property="xmwjlj" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        XMLXXXID, XMBH, XMMC, TCDWDM, TCDW, WTDW, FZR, CYRY, JLRY, XMSHQLJ, XMSHQ, XMPF, XMHT, XMTJ, XMJGSH, ORGID, companyid, XMPFLJ, XMHTLJ, ENDTIME, STARTTIME, XMTJLJ, XMWJLJ
+    </sql>
+
+</mapper>
