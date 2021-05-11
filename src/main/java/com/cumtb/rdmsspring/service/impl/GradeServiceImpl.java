@@ -1,8 +1,8 @@
 package com.cumtb.rdmsspring.service.impl;
 
-import com.cumtb.rdmsspring.entity.Role;
-import com.cumtb.rdmsspring.mapper.RoleMapper;
-import com.cumtb.rdmsspring.service.IRoleService;
+import com.cumtb.rdmsspring.entity.Grade;
+import com.cumtb.rdmsspring.mapper.GradeMapper;
+import com.cumtb.rdmsspring.service.IGradeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2021-04-30
  */
 @Service
-public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements IRoleService {
+public class GradeServiceImpl extends ServiceImpl<GradeMapper, Grade> implements IGradeService {
 
 }

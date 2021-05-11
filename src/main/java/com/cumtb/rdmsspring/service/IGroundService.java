@@ -1,6 +1,6 @@
 package com.cumtb.rdmsspring.service;
 
-import com.cumtb.rdmsspring.entity.Role;
+import com.cumtb.rdmsspring.entity.Ground;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author zhangdehao
  * @since 2021-04-30
  */
-public interface IRoleService extends IService<Role> {
+public interface IGroundService extends IService<Ground> {
 
 }

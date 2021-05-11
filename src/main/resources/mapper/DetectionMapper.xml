@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cumtb.rdmsspring.mapper.DetectionMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cumtb.rdmsspring.entity.Detection">
+        <id column="detectionId" property="detectionId" />
+        <result column="number" property="number" />
+        <result column="name" property="name" />
+        <result column="startDescribe" property="startDescribe" />
+        <result column="endDescribe" property="endDescribe" />
+        <result column="startGrid" property="startGrid" />
+        <result column="endGrid" property="endGrid" />
+        <result column="groundId" property="groundId" />
+        <result column="fieldAndDriection" property="fieldAndDriection" />
+        <result column="projectId" property="projectId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        detectionId, number, name, startDescribe, endDescribe, startGrid, endGrid, groundId, fieldAndDriection, projectId
+    </sql>
+
+</mapper>

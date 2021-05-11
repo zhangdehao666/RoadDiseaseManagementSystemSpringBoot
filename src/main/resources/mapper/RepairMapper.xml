@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cumtb.rdmsspring.mapper.RepairMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cumtb.rdmsspring.entity.Repair">
+        <id column="repairId" property="repairId" />
+        <result column="repairCompany" property="repairCompany" />
+        <result column="director" property="director" />
+        <result column="number" property="number" />
+        <result column="time" property="time" />
+        <result column="plan" property="plan" />
+        <result column="planPath" property="planPath" />
+        <result column="detectionId" property="detectionId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        repairId, repairCompany, director, number, time, plan, planPath, detectionId
+    </sql>
+
+</mapper>

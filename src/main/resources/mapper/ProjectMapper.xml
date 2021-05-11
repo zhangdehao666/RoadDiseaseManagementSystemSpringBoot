@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cumtb.rdmsspring.mapper.ProjectMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cumtb.rdmsspring.entity.Project">
+        <id column="projectId" property="projectId" />
+        <result column="number" property="number" />
+        <result column="name" property="name" />
+        <result column="detectCompanyNumber" property="detectCompanyNumber" />
+        <result column="detectCompany" property="detectCompany" />
+        <result column="entrustCompany" property="entrustCompany" />
+        <result column="director" property="director" />
+        <result column="participants" property="participants" />
+        <result column="supervisors" property="supervisors" />
+        <result column="apply" property="apply" />
+        <result column="applyPath" property="applyPath" />
+        <result column="reply" property="reply" />
+        <result column="replyPath" property="replyPath" />
+        <result column="contract" property="contract" />
+        <result column="contractPath" property="contractPath" />
+        <result column="book" property="book" />
+        <result column="bookPath" property="bookPath" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        projectId, number, name, detectCompanyNumber, detectCompany, entrustCompany, director, participants, supervisors, apply, applyPath, reply, replyPath, contract, contractPath, book, bookPath
+    </sql>
+
+</mapper>

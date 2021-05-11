@@ -2,9 +2,8 @@ package com.cumtb.rdmsspring.controller;
 
 
 import com.cumtb.rdmsspring.entity.Grade;
-import com.cumtb.rdmsspring.entity.Role;
+import com.cumtb.rdmsspring.entity.Type;
 import com.cumtb.rdmsspring.service.IGradeService;
-import com.cumtb.rdmsspring.service.IRoleService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,23 +24,23 @@ import java.util.List;
  * @since 2021-04-30
  */
 @RestController
-@RequestMapping("/role")
-@Api(tags = "用户角色")
-public class RoleController {
+@RequestMapping("/grade")
+@Api(tags = "灾害源等级")
+public class GradeController {
 
     @Autowired
-    private IRoleService iRoleService;
+    private IGradeService iGradeService;
 
-    @ApiOperation(value = "获取用户角色")
-    @GetMapping("/{roleId}")
-    public Role getRole(@PathVariable Integer roleId){
-        return iRoleService.getById(roleId);
+    @ApiOperation(value = "获取灾害源等级")
+    @GetMapping("/{gradeId}")
+    public Grade getGrade(@PathVariable Integer gradeId){
+        return iGradeService.getById(gradeId);
     }
 
-    @ApiOperation(value = "获取全部角色")
+    @ApiOperation(value = "获取所有灾害源等级")
     @GetMapping("/all")
-    public List<Role> getAllRoles(){
-        return iRoleService.list();
+    public List<Grade> getAllGrades(){
+        return iGradeService.list();
     }
 
 }

@@ -2,6 +2,7 @@ package com.cumtb.rdmsspring.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableField;
 import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -20,20 +21,31 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("role")
-@ApiModel(value="Role对象", description="")
-public class Role implements Serializable {
+@TableName("repair")
+@ApiModel(value="Repair对象", description="")
+public class Repair implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId("roleId")
-    private Integer roleId;
+    @TableId("repairId")
+    private Integer repairId;
 
-    private String name;
+    @TableField("repairCompany")
+    private String repairCompany;
 
-    private String modify;
+    private String director;
 
-    private String establish;
+    private String number;
+
+    private String time;
+
+    private String plan;
+
+    @TableField("planPath")
+    private String planPath;
+
+    @TableField("detectionId")
+    private Integer detectionId;
 
 
 }

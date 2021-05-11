@@ -15,25 +15,21 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author zhangdehao
- * @since 2021-04-30
+ * @since 2021-05-06
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("role")
-@ApiModel(value="Role对象", description="")
-public class Role implements Serializable {
+@TableName("touch")
+@ApiModel(value="Touch对象", description="")
+public class Touch implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId("roleId")
-    private Integer roleId;
+    @TableId("touchId")
+    private Integer touchId;
 
     private String name;
-
-    private String modify;
-
-    private String establish;
 
 
 }

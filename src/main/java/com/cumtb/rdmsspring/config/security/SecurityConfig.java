@@ -1,7 +1,6 @@
 package com.cumtb.rdmsspring.config.security;
 
-import com.cumtb.rdmsspring.entity.Ryxx;
-import com.cumtb.rdmsspring.service.IRyxxService;
+import com.cumtb.rdmsspring.service.IAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -25,7 +24,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    private IRyxxService iRyxxService;
+    private IAdminService iAdminService;
     @Autowired
     private RestAuthorizationEntryPoint restAuthorizationEntryPoint;
     @Autowired
@@ -82,7 +81,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     public UserDetailsService userDetailsService() {
         return username -> {
-            return iRyxxService.getAdminByUserName(username);
+            return iAdminService.getAdminByUserName(username);
         };
     }
 

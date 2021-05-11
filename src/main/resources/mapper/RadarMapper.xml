@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cumtb.rdmsspring.mapper.RadarMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cumtb.rdmsspring.entity.Radar">
+        <id column="radarId" property="radarId" />
+        <result column="number" property="number" />
+        <result column="originalFile" property="originalFile" />
+        <result column="originalPath" property="originalPath" />
+        <result column="handleFile" property="handleFile" />
+        <result column="handlePath" property="handlePath" />
+        <result column="gridFile" property="gridFile" />
+        <result column="gridPath" property="gridPath" />
+        <result column="searchFile" property="searchFile" />
+        <result column="searchPath" property="searchPath" />
+        <result column="detectionId" property="detectionId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        radarId, number, originalFile, originalPath, handleFile, handlePath, gridFile, gridPath, searchFile, searchPath, detectionId
+    </sql>
+
+</mapper>

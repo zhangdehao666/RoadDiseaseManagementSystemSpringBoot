@@ -1,10 +1,8 @@
 package com.cumtb.rdmsspring.controller;
 
 
-import com.cumtb.rdmsspring.entity.Grade;
-import com.cumtb.rdmsspring.entity.Role;
-import com.cumtb.rdmsspring.service.IGradeService;
-import com.cumtb.rdmsspring.service.IRoleService;
+import com.cumtb.rdmsspring.entity.Ground;
+import com.cumtb.rdmsspring.service.IGroundService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,23 +23,25 @@ import java.util.List;
  * @since 2021-04-30
  */
 @RestController
-@RequestMapping("/role")
-@Api(tags = "用户角色")
-public class RoleController {
+@RequestMapping("/ground")
+@Api(tags = "地层情况")
+public class GroundController {
 
     @Autowired
-    private IRoleService iRoleService;
+    private IGroundService iGroundService;
 
-    @ApiOperation(value = "获取用户角色")
-    @GetMapping("/{roleId}")
-    public Role getRole(@PathVariable Integer roleId){
-        return iRoleService.getById(roleId);
+    @ApiOperation(value = "获取地层情况")
+    @GetMapping("/{groundId}")
+    public Ground getGround(@PathVariable Integer groundId){
+        return iGroundService.getById(groundId);
     }
 
-    @ApiOperation(value = "获取全部角色")
+    @ApiOperation(value = "获取所有地层情况")
     @GetMapping("/all")
-    public List<Role> getAllRoles(){
-        return iRoleService.list();
+    public List<Ground> getAllGrounds(){
+        return iGroundService.list();
     }
+
+//    @ApiOperation(value = "添加地层情况")
 
 }

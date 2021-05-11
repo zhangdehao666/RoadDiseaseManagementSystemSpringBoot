@@ -11,7 +11,7 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author zhangdehao
@@ -20,20 +20,16 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("role")
-@ApiModel(value="Role对象", description="")
-public class Role implements Serializable {
+@TableName("grade")
+@ApiModel(value="Grade对象", description="")
+public class Grade implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId("roleId")
-    private Integer roleId;
+    @TableId("gradeId")
+    private Integer gradeId;
 
-    private String name;
-
-    private String modify;
-
-    private String establish;
+    private String introduce;
 
 
 }

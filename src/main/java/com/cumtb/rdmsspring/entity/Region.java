@@ -2,6 +2,7 @@ package com.cumtb.rdmsspring.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableField;
 import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -11,7 +12,7 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author zhangdehao
@@ -20,20 +21,27 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("role")
-@ApiModel(value="Role对象", description="")
-public class Role implements Serializable {
+@TableName("region")
+@ApiModel(value="Region对象", description="")
+public class Region implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId("roleId")
-    private Integer roleId;
+    @TableId("regionId")
+    private Integer regionId;
 
-    private String name;
+    private String province;
 
-    private String modify;
+    private String city;
 
-    private String establish;
+    private String area;
+
+    private String street;
+
+    private String position;
+
+    @TableField("projectId")
+    private Integer projectId;
 
 
 }

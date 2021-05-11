@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.cumtb.rdmsspring.mapper.RoleMapper">
+<mapper namespace="com.cumtb.rdmsspring.mapper.TouchMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.cumtb.rdmsspring.entity.Role">
-        <id column="roleId" property="roleId" />
+    <resultMap id="BaseResultMap" type="com.cumtb.rdmsspring.entity.Touch">
+        <id column="touchId" property="touchId" />
         <result column="name" property="name" />
-        <result column="modify" property="modify" />
-        <result column="establish" property="establish" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        roleId, name, modify, establish
+        touchId, name
     </sql>
 
 </mapper>

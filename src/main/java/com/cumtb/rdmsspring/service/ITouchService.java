@@ -1,6 +1,6 @@
 package com.cumtb.rdmsspring.service;
 
-import com.cumtb.rdmsspring.entity.Role;
+import com.cumtb.rdmsspring.entity.Touch;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author zhangdehao
- * @since 2021-04-30
+ * @since 2021-05-06
  */
-public interface IRoleService extends IService<Role> {
+public interface ITouchService extends IService<Touch> {
 
 }

@@ -1,7 +1,9 @@
 package com.cumtb.rdmsspring.service;
 
-import com.cumtb.rdmsspring.entity.Role;
+import com.cumtb.rdmsspring.entity.Project;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
  * <p>
@@ -11,6 +13,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author zhangdehao
  * @since 2021-04-30
  */
-public interface IRoleService extends IService<Role> {
-
+public interface IProjectService extends IService<Project> {
 }

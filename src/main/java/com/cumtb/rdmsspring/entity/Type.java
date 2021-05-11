@@ -20,20 +20,16 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("role")
-@ApiModel(value="Role对象", description="")
-public class Role implements Serializable {
+@TableName("type")
+@ApiModel(value="Type对象", description="")
+public class Type implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId("roleId")
-    private Integer roleId;
+    @TableId("typeId")
+    private Integer typeId;
 
     private String name;
-
-    private String modify;
-
-    private String establish;
 
 
 }

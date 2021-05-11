@@ -1,6 +1,6 @@
 package com.cumtb.rdmsspring.mapper;
 
-import com.cumtb.rdmsspring.entity.Role;
+import com.cumtb.rdmsspring.entity.Type;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -13,6 +13,6 @@ import org.apache.ibatis.annotations.Mapper;
  * @since 2021-04-30
  */
 @Mapper
-public interface RoleMapper extends BaseMapper<Role> {
+public interface TypeMapper extends BaseMapper<Type> {
 
 }
